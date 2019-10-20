@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>消消乐游戏</title>
+  <style type="text/css">
+    .game {
+      width: 100vw;
+      height: 100vh;
+      background: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class='game'>
+    <canvas width="450" height="800" id="canvas"></canvas>
+  </div>
+  <script src="js/ProductMap.js"></script>
+
+  <script>
+    const xiaoxiaole = new ProductMap(9)
+    xiaoxiaole.init()
+    console.log(xiaoxiaole.map)
+  </script>
+</body>
+
+</html>
